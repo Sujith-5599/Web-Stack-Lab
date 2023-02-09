@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FORM
+        </title>
+        <style>
+            body{
+                background-color: aqua;
+            }
+            label{
+                
+            }
+        </style>
+    </head>
+    <body>
+        <table   align="center" border="1" class="table">
+            <td>
+        <h1 style="text-align: center;">Event Registration Form</h1>
+    </td>
+    <td>
+        <form>
+            Name <input type="text" id="name" name="name" ><br><br>
+            Degree <input type="text" id="degree" name="degree" ><br><br>
+            College<input type="text" id="college" name="college"><br><br>
+            <label>YEAR&nbsp;:</label>&nbsp;&nbsp;
+            
+            <input type="radio" id ="1" name="year" value="1st year">&nbsp;
+            <label for="1">I<sup>st</sup></label>
+           
+            <input type="radio" id ="2" name="year" value="2nd year">&nbsp;
+            <label for="2">II<sup>nd</sup></label>
+            
+            <input type="radio" id ="3" name="year" value="3rd year">&nbsp;
+            <label for="3">III<sup>rd</sup></label>
+            
+            <input type="radio" id ="4" name="year" value="4th year">
+            <label for="4">IV<sup>th</sup></label><br><br>
+            <label for="mail">MAIL-ID</label>&nbsp;
+            <input type="email" id="mail" name ="mail"><br><br>
+            <label for="phone">PHONE.NO</label>&nbsp;
+            <input type="tel" id="phone" name="phone" placeholder="+91"><br><br>
+            <label for="address">ADDRESS</label>&nbsp;
+            <textarea id="address" name="address" rows="10" cols="50" placeholder="enter ..."></textarea><br><br>
+            <label for="event">DATE OF EVENT</label>&nbsp;
+            <input type="datetime" id="event" name="datetime"><br><br>
+            <label for="noevents">EVENTS-PARTICIPATED</label>&nbsp;
+            <input type="range" id="noevents" name="noeventsval" min="0" max="4" value="0" oninput="amount.value=noeventsval.value"><output id="amount" name="amount" for="noevents">0</output><br><br>
+            <label for="list">EVENT-LISTS&nbsp;:</label>&nbsp;&nbsp;
+            
+            <input type="checkbox" id="papers" name="paper" value="paper presentation">&nbsp;&nbsp;
+            <label for="papers">PAPER PRESENTATION</label>
+            
+            <input type="checkbox" id="debug" name="debug" value="debugging">&nbsp;&nbsp;
+            <label for="debug">DEBUGGING</label>
+            
+            <input type="checkbox" id="tech" name="technex" value="technex">&nbsp;&nbsp;
+            <label for="tech">TECHNEX</label>
+            
+            <input type="checkbox" id="marathon" name="marathon" value="marathon">
+            <label for="marathon">MARATHON</label>
+<br><br>
+            <label for="dept">DEPARTMENT</label>&nbsp;&nbsp;
+            <input list="depts" name="department" id="dept">
+            <datalist id="depts">
+                <option value="AI&DS">AI&DS</option>
+                <option value="IT">IT</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="ECE">ECE</option>
+                <option value="MECH">MECH</option>
+                <option value="BIO-TECH">BIO-TECH</option>
+                <option value="BIO-MED">BIO-MED</option>
+                <option value="CIVIL">CIVIL</option>
+            </datalist><br><br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" name="submit" style="padding-right: 10px;">
+            &emsp;&emsp;&emsp;&emsp;<input type="reset" name ="reset">
+            
+        </form>
+    </td>
+    
+    </table>
+    </body>
+
+
+</html>

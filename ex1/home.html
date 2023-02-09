@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> sujith</title>
+        <style>
+            h1{
+                color: #009688;
+            }
+            p{
+                color: #009688;
+            }
+            li{
+                color: #009688;
+            }
+            body{
+                color: #009688;
+                background-color: black;
+                
+                /* background-image: url("home 3.jpg"); */
+                /* background-color: #cccccc; */
+                
+            }   
+                
+            
+            div{
+                margin:0;
+                padding:0;
+                font-family:sans-serif;
+                /* color: #009688; */
+                /* background-image: url("home 3.jpg"); */
+                /* opacity: 0.3; */
+
+
+            }
+            .main{
+                width:100%;
+                height:100vh;
+               /* background-image:url("home2.jpg");*/
+               /* background-color:silver; */
+                background-size: cover;
+                background-position: center;
+            }
+            .navbar{
+                color:#009688;
+                width: 85%;
+                margin: auto;
+                padding:35px 0;
+                display:flex;
+                align-items:center;
+                justify-content: space-between;
+            }
+            .logo
+            {
+                width: 100px;
+                cursor: pointer;
+            }
+            .navbar ul li{
+                list-style:none;
+                display:inline-block;
+                margin:0 20px;
+                position: relative;
+            }
+            .navbar ul li a{
+                text-decoration: none;
+                color: #009688;
+                text-transform: uppercase;
+            }
+            .navbar ul li::after
+            {
+                content:'';
+                height:3px;
+                width:0;
+                background: #009688;
+                position:absolute;
+                left:0;
+                bottom: -10px;
+                transition:0.25s;
+                color: #009688;
+            }
+            .navbar ul li:hover::after{
+                width:100%;
+                color: #009688;
+
+            }
+            .content{
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                text-align:center;
+                color:#fff;
+                color: #009688;
+            
+            }
+            .content h1{
+                font-size: 70px;
+                margin-top:80px;
+            }
+            .content p{
+                margin: 20px auto;
+                font-weight:100;
+                line-height:25px;
+                font-style: italic;
+            }
+            button{
+                width: 200px;
+                padding:15;
+                text-align:center;
+                margin:20px 10px;
+                border-radius: 25px;
+                font-weight: bold;
+                border:2px solid #009688;
+                background:transparent;
+                color:#009688;
+                cursor:pointer;
+                position:relative;
+                overflow:hidden;
+            }
+           
+            span{
+                background:#009688;
+                height:100%;
+                width:0%;
+                border-radius:25px;
+                position:absolute;
+                left:0;
+                bottom: 0 ;
+                z-index:-1;
+                transition: 0.5s;
+            } 
+            button:hover span{
+                width:100%;
+            }
+            button:hover{
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <p style="background-image: url('home 3.jpg');"> -->
+
+        <div class="main">
+            <div class="navbar">
+                <img src="logo-color.png" class="logo">
+                <ul >
+                    <li><a href="profile.html">➡️ABOUT</a></li>
+                    <li><a href="education.html">➡️EDUCATION</a></li>
+                    <li><a href="technical concepts.html">➡️TECHNICAL CONCEPTS</a></li>
+                    <li><a href="Area of interest.html">➡️AREA OF INTEREST</a></li>
+                    <li><a href="Project.html">➡️PROJECTS</a></li>
+                    <!-- <li><a href="">gallery</a></li> -->
+                    <li><a href="contact.html">➡️CONTACT</a></li>
+                </ul>
+
+            </div>
+            <div class="content">
+                <h1>SUJITH M</h1>
+                <p>from Namakkal,Tamilnadu</p>
+                <div class="button">
+                    <a href="resume dup.pdf" download="resume"><button type="button"><span></span>resume</button></a>
+                    <!--<button type="button"><span></span>download</button>-->
+                </div>
+                
+
+            </div>
+
+        </div>
+    </body>
+</html>
